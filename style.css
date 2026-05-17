@@ -1,0 +1,101 @@
+:root {
+    --sable: #FDF5E6;       
+    --ocre: #E29578;        
+    --vert-pastel: #83C5BE; 
+    --texte: #4A4E69;       
+    --blanc: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--sable);
+    color: var(--texte);
+    line-height: 1.6;
+}
+
+.nav-link-custom {
+    text-decoration: none;
+    color: var(--texte);
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-link-custom:hover {
+    color: var(--ocre);
+}
+
+.nav-link-custom.active {
+    color: var(--ocre);
+    font-weight: bold;
+    border-bottom: 2px solid var(--ocre);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none !important;
+    background-color: var(--blanc) !important;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.bg-ocre {
+    background-color: var(--ocre) !important;
+}
+
+.bg-vert {
+    background-color: var(--vert-pastel) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(65%) sepia(21%) saturate(933%) hue-rotate(331deg) brightness(93%) contrast(90%);
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel-inner {
+    padding: 20px 0;
+}
+
+.btn-custom {
+    background-color: var(--ocre);
+    color: var(--blanc) !important;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: var(--vert-pastel);
+    box-shadow: 0 4px 15px rgba(131, 197, 190, 0.4);
+}
+
+.ocre-text {
+    color: var(--ocre) !important;
+}
+
+.vert-text {
+    color: var(--vert-pastel) !important;
+}
+
+@media (max-width: 768px) {
+    h1.display-3 {
+        font-size: 2.5rem;
+    }
+    .nav-link-custom {
+        font-size: 11px;
+    }
+}

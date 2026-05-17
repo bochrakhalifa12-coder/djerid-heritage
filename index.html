@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrimoine du Djérid - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="margin:0; padding:0; background-color: #FDF5E6;">
+
+    <div align="center" style="background-color: #ffffff; padding: 20px 0; border-bottom: 2px solid #83C5BE;">
+        <table width="90%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left">
+                    <font face="sans-serif" size="5" style="color: #E29578;"><strong>DJÉRID</strong> PATRIMOINE</font>
+                </td>
+                <td align="right">
+                    <font face="sans-serif" size="3">
+                        <a href="accueil.html" class="nav-link-custom active">ACCUEIL</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+                        <a href="architecture.html" class="nav-link-custom">ARCHITECTURE</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+                        <a href="nature.html" class="nav-link-custom">NATURE</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+                        <a href="traditions.html" class="nav-link-custom">TRADITIONS</a>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container text-center mt-4">
+        <div class="p-4 bg-white rounded-4 shadow-sm border-0">
+            <div id="welcome-msg" style="font-family: sans-serif; color: #83C5BE; font-weight: bold; text-transform: uppercase; font-size: 1.1rem;" class="mb-3"></div>
+            
+            <button class="btn btn-warning btn-sm px-4 rounded-pill fw-bold text-white" onclick="ajouterLike()" style="background-color: #E29578; border: none;">❤️ J'aime ce projet</button>
+            <p class="mt-2 mb-0 text-muted small" style="font-family: sans-serif;">Mentions reçues : <span id="compteur-likes" class="fw-bold text-dark">0</span></p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-5" style="font-family: sans-serif; color: #E29578; font-weight: 300;">Exploration du Patrimoine</h2>
+        
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="../img/tozeur.jpg" class="card-img-top" alt="Tozeur" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ocre-text">Tozeur</h5>
+                                    <p class="card-text small text-muted">L'architecture légendaire en briques d'argile.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="../img/nafta.jpg" class="card-img-top" alt="Nefta" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ocre-text">Nefta</h5>
+                                    <p class="card-text small text-muted">La Corbeille, oasis mystique et spirituelle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="../img/chattjerid.jpg" class="card-img-top" alt="Chott" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ocre-text">Chott el-Djérid</h5>
+                                    <p class="card-text small text-muted">L'immensité saline aux reflets changeants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="../img/tradition.jpg" class="card-img-top" alt="Artisanat" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ocre-text">Artisanat</h5>
+                                    <p class="card-text small text-muted">Le savoir-faire ancestral de la vannerie.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="../img/food.jpg" class="card-img-top" alt="Dattes" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ocre-text">Gastronomie</h5>
+                                    <p class="card-text small text-muted">La Deglet Nour, reine des dattes du Djérid.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <img src="../img/festival.jpg" class="card-img-top" alt="Festival" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title ocre-text">Festivals</h5>
+                                    <p class="card-text small text-muted">Célébrations de la culture oasienne.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(50%) sepia(50%) saturate(500%) hue-rotate(330deg);"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(50%) sepia(50%) saturate(500%) hue-rotate(330deg);"></span>
+            </button>
+        </div>
+    </div>
+
+    <div align="center" style="margin-top: 50px; padding: 30px; background-color: #ffffff; border-top: 1px solid #eee;">
+        <font face="sans-serif" size="2" color="#666">&copy; 2026 Tozeur - Patrimoine du Djérid</font>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
