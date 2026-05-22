@@ -16,7 +16,7 @@ function montrerInfo(sujet) {
             zoneTexte.innerText = "🧺 La Vannerie : Un savoir-faire ancestral qui transforme les feuilles de palmier en objets d'art !";
         } 
         else if (sujet === 'brique') {
-            zoneTexte.innerText = "🧱 Les briques en relief protègent les murs de la chaleur de l'été.";
+            zoneTexte.innerText = "🌴 La Deglet Nour offre une douceur unique qui ravit les palais depuis des générations.";
         } 
         else if (sujet === 'plat') {
             zoneTexte.innerText = "🍲 Art Culinaire : Une cuisine oasienne riche en saveurs, marquée par l'utilisation d'épices locales et de dattes.";
